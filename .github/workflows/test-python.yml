@@ -1,0 +1,23 @@
+name: Validate RobotFramework Example
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '**.md'
+  pull_request:
+    paths-ignore:
+      - '**.md'
+jobs:
+  test-robotframework:
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+      with:
+        python-version: '3.10' 
+      - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - run: PYTHONPATH=$PYTHONPATH:. robot --variable BROWSER:chrome --variable VERSION:latest --variable PLATFORM:MAC test.robot
