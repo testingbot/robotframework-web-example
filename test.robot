@@ -6,10 +6,6 @@ Library  TestingBot
 Test Setup  Open test browser
 Test Teardown  Close test browser
 
-*** Variables ***
-
-${CREDENTIALS}  %{TB_KEY}:%{TB_SECRET}
-
 *** Test Cases ***
 
 Simple Test
@@ -20,7 +16,7 @@ Simple Test
 
 Open test browser
 	Open browser  about:  firefox
-	...  remote_url=http://${CREDENTIALS}@hub.testingbot.com/wd/hub
+	...  remote_url=https://${TB_KEY}:${TB_SECRET}@hub.testingbot.com/wd/hub
 	...  desired_capabilities=browserName:${BROWSER},version:${VERSION},platform:${PLATFORM}
 
 Close test browser
