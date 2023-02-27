@@ -22,5 +22,5 @@ Open test browser
 Close test browser
 	...  Report TestingBot status
 	...  ${SUITE_NAME} | ${TEST_NAME}
-	...  ${TEST_STATUS}  ${CREDENTIALS}
+	...  ${TEST_STATUS}  ${TB_KEY}:${TB_SECRET}
 	Close all browsers
