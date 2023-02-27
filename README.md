@@ -1,3 +1,5 @@
+[![Validate RobotFramework Example](https://github.com/testingbot/robotframework-web-example/actions/workflows/test-python.yml/badge.svg)](https://github.com/testingbot/robotframework-web-example/actions/workflows/test-python.yml)
+
 ## TestingBot RobotFramework Example
 
 TestingBot provides an online grid of browsers and mobile devices to run Automated tests on via Selenium WebDriver.
