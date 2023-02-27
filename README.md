@@ -12,14 +12,10 @@ This example demonstrates how to use RobotFramework to run a test on a remote Te
 	* Install the dependencies `pip install -r requirements.txt`
 
 2. TestingBot Credentials
-   Add your TestingBot Key and Secret as environmental variables. You can find these in the [TestingBot Dashboard](https://testingbot.com/members/).
-    ```
-    $ export TB_KEY=<your TestingBot Key>
-    $ export TB_SECRET=<your TestingBot Secret>
-    ```
+   Retrieve your TestingBot Key (`TB_KEY`) and Secret (`TB_SECRET`) from the [TestingBot Dashboard](https://testingbot.com/members/).
 
 3. Run test:
-	```PYTHONPATH=$PYTHONPATH:. robot --variable BROWSER:chrome --variable VERSION:latest --variable PLATFORM:MAC test.robot```
+	```PYTHONPATH=$PYTHONPATH:. robot --variable BROWSER:chrome --variable VERSION:latest --variable PLATFORM:MAC --variable TB_KEY=<your TestingBot Key> --variable TB_SECRET=<your TestingBot Secret> test.robot```
 
 ### Resources
 ##### [TestingBot Documentation](https://testingbot.com/support/getting-started/robotframework.html)
