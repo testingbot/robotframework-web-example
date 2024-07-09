@@ -15,7 +15,7 @@ This example demonstrates how to use RobotFramework to run a test on a remote Te
    Retrieve your TestingBot Key (`TB_KEY`) and Secret (`TB_SECRET`) from the [TestingBot Dashboard](https://testingbot.com/members/).
 
 3. Run test:
-	```PYTHONPATH=$PYTHONPATH:. robot --variable BROWSER:chrome --variable VERSION:latest --variable PLATFORM:MAC --variable TB_KEY=<your TestingBot Key> --variable TB_SECRET=<your TestingBot Secret> test.robot```
+	```PYTHONPATH=$PYTHONPATH:. robot --variable BROWSER:chrome --variable VERSION:latest --variable PLATFORM:MAC --variable TB_KEY:<your TestingBot Key> --variable TB_SECRET:<your TestingBot Secret> test.robot```
 
 ### Resources
 ##### [TestingBot Documentation](https://testingbot.com/support/getting-started/robotframework.html)
