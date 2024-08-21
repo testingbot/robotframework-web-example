@@ -23,6 +23,10 @@ Open test browser
     Call Method    ${options}    set_capability    browserName    ${BROWSER}
     Call Method    ${options}    set_capability    browserVersion    ${VERSION}
 
+    # Set custom TestingBot capabilities using tb:options
+    ${tb_options}=    Create Dictionary    name=test    build=MyTestBuild
+    Call Method    ${options}    set_capability    tb:options    ${tb_options}
+
     # Open browser with options
     Open Browser    remote_url=https://${TB_KEY}:${TB_SECRET}@hub.testingbot.com/wd/hub    options=${options}
 
