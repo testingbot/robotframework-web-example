@@ -27,11 +27,8 @@ Open test browser
     ${tb_options}=    Create Dictionary    name=test    build=MyTestBuild
     Call Method    ${options}    set_capability    tb:options    ${tb_options}
 
-    # Open browser with options
-    Open Browser    remote_url=https://${TB_KEY}:${TB_SECRET}@hub.testingbot.com/wd/hub    options=${options}
+    Open Testingbot Browser    ${options}
 
 Close test browser
-	...  Report TestingBot status
-	...  ${SUITE_NAME} | ${TEST_NAME}
-	...  ${TEST_STATUS}  ${TB_KEY}:${TB_SECRET}
+	Report Testingbot Status    ${SUITE_NAME} | ${TEST_NAME}    ${TEST_STATUS}
 	Close all browsers
