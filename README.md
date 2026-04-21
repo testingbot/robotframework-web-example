@@ -28,7 +28,7 @@ This example demonstrates how to use RobotFramework to run a test on a remote Te
 
 
 ### Resources
-##### [TestingBot Documentation](https://testingbot.com/support/getting-started/robotframework.html)
+##### [TestingBot Documentation](https://testingbot.com/support/web-automate/selenium/robotframework)
 
 ##### [SeleniumHQ Documentation](https://www.selenium.dev/documentation/)
 
