@@ -1,4 +1,4 @@
 robotframework
 robotframework-seleniumlibrary
-selenium>=4.18
+selenium>=4.43.0
 requests
