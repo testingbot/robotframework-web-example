@@ -10,8 +10,9 @@ Test Teardown  Close test browser
 *** Test Cases ***
 
 Android Chrome Test
-	Go to  https://www.google.com
-	Page should contain  Google
+	Go to  https://testingbot.com
+	${title}=  Get Title
+	Should Contain  ${title}  TestingBot
 
 *** Keywords ***
 
